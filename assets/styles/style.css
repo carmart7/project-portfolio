@@ -47,7 +47,7 @@ nav {
     width: 300px;
 }
 
-a {
+nav a {
     text-decoration: underline;
     color: var(--text-light);
     font-size: 200%;
@@ -82,7 +82,7 @@ a {
     border-right: none;
 }
 
-/* Main */
+/* Sections */
 
 section {
     padding-top: 50px;
@@ -98,6 +98,7 @@ section {
     padding-top: 10px;
     margin-bottom: 20px;
     text-align: center;
+    padding-right: 5px;
 }
 
 .right-holder {
@@ -112,6 +113,7 @@ section {
 #about .right-holder {
     text-align: justify;
     font-size: 150%;
+    color: var(--dark-background-color)
 }
 
 #about .right-holder img {
@@ -161,6 +163,18 @@ section {
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
+}
+
+/* Contact Section */
+
+#contact .right-holder {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact a {
+    color: var(--dark-background-color);
+    font-size: 200%;
 }
 
 /* Footer */
