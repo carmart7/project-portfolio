@@ -1,15 +1,31 @@
+/* Variables */
+
 :root {
     --light-background-color: #f1f1f1;
     --dark-background-color: #476268;
     --text-light: #f5e1da;
     --side-padding: 10%;
+    --border-color: #40a798;
 }
+
+/* Universal */
 
 body {
     background-color: var(--light-background-color);
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+h2 {
+    color: var(--dark-background-color);
+    font-size: 225%;
+}
+
+h3 {
+    font-size: 200%;
+}
+
+/* Header */
 
 header {
     background-color: var(--dark-background-color);
@@ -38,6 +54,8 @@ a {
     cursor: pointer;
 }
 
+/* Large Image at the top of page */
+
 #image-holder {
     position: relative;
     width: 100%;
@@ -46,8 +64,8 @@ a {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border-top: black solid 2px;
-    border-bottom: black solid 2px;
+    border-top: var(--border-color) solid 2px;
+    border-bottom: var(--border-color) solid 2px;
 
 }
 
@@ -60,7 +78,11 @@ a {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     margin-bottom: 10px;
+    border: var(--border-color) solid 2px;
+    border-right: none;
 }
+
+/* Main */
 
 section {
     padding-top: 50px;
@@ -75,6 +97,7 @@ section {
     margin-right: 10%;
     padding-top: 10px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .right-holder {
@@ -82,19 +105,62 @@ section {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    position: relative;
+}
+
+/* About Section */
+
+#about .right-holder {
     text-align: justify;
 }
 
-.right-holder img {
+#about .right-holder img {
     float: right;
     padding-left: 15px;
 }
-
-h2 {
-    color: var(--dark-background-color);
-    font-size: 225%;
+/* Work Section*/
+#work .right-holder {
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+.major-work, .minor-work {
+    border-radius: 20px;
+    margin-bottom: 15px;
+    height: 200px;
+    background-color: black;
+    position: relative;
+
+}
+
+.major-work {
+    width: 100%;
+}
+
+.minor-work {
+    width: 49%;
+}
+
+.work-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--dark-background-color);
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px;
+    color: var(--text-light);
+}
+
+.work-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Footer */
 
 footer {
     width: 100%;
