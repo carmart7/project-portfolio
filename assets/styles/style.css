@@ -12,10 +12,13 @@
 /* Universal */
 * {
     box-sizing: border-box;
-
   }
 
 /* Body */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--light-background-color);
     box-sizing: border-box;
