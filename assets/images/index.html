@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5501/index.html#work -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <title></title>
+<link href="./index_files/css2" rel="stylesheet"><link rel="stylesheet" href="./index_files/reset.css"><link rel="stylesheet" href="./index_files/style.css"></head>
+<body>
+    <header>
+        <h1>Carlos Martinez </h1>
+        <nav>
+            <a href="http://127.0.0.1:5501/index.html#about">About</a>
+            <a href="http://127.0.0.1:5501/index.html#work">Work</a>
+            <a href="http://127.0.0.1:5501/index.html#contact">Contact</a>
+        </nav>
+    </header>
+    <div id="image-holder">
+        <h1>Personal Portfolio</h1>
+    </div>
+    <main>
+        <section id="about">
+            <div class="left-holder">
+                <h2>About Me </h2>
+            </div>
+            <div class="right-holder">
+                <img id="self-img" src="./index_files/tempSelfPic.jpg" alt="picture of me, carlos martinez">
+                <p>Lorem ipsum dolor sit amet, consd ectetur adipiscing elit. Ut porttitor rutrum sapien, sit amet facilisis ipsum hendrerit id. Vestibulum non erat vel risus tincidunt iaculis non et tortor. Morbi dolor diam, egestas id est id, interdum maximus elit. Cras nec consectetur lectus. Morbi a dictum magna. Donec posuere pulvinar ante, vel lacinia ante rutrum vitae. Maecenas at metus rhoncus, pretium odio ac, pharetra lectus. Donec a orci ipsum. Suspendisse condimentum velit id elit venenatis pellentesque. Suspendisse diam elit, molestie nec maximus sed, elementum et velit.</p>
+            </div>
+        </section>
+
+        <section id="work">
+            <div class="left-holder" style="
+    padding-right: 5px;
+">
+                <h2>Work</h2>
+            </div>
+            <div class="right-holder">
+                <a class="major-work" href="https://github.com/carmart7/project-portfolio" target="_blank">
+                    <img class="work-img" src="./index_files/work1.jpg" alt="">
+                    <div class="work-name">
+                        <h3>Work #1</h3>
+                    </div>
+                </a>
+                <a class="minor-work" href="https://github.com/carmart7/project-portfolio" target="_blank">
+                    <img class="work-img" src="./index_files/work2.jpg" alt="">
+                    <div class="work-name">
+                        <h3>Work #2</h3>
+                    </div>
+                </a>
+                <a class="minor-work" href="https://github.com/carmart7/project-portfolio" target="_blank">
+                    <img class="work-img" src="./index_files/work3.jpg" alt="">
+                    <div class="work-name">
+                        <h3>Work #3</h3>
+                    </div>
+                </a>
+                <a class="minor-work" href="https://github.com/carmart7/project-portfolio" target="_blank">
+                    <img class="work-img" src="./index_files/work4.jpg" alt="">
+                    <div class="work-name">
+                        <h3>Work #4</h3>
+                    </div>
+                </a>
+                <a class="minor-work" href="https://github.com/carmart7/project-portfolio" target="_blank">
+                    <img class="work-img" src="./index_files/work5.jpg" alt="">
+                    <div class="work-name">
+                        <h3>Work #5</h3>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="left-holder">
+                <h2 style="
+    padding-right: 10px;
+">Contact Info </h2>
+            </div>
+            <div class="right-holder">
+                <a id="email" href="mailto:carmartu7@gmail.com">Email</a>
+                <a id="github" href="https://github.com/carmart7">Github</a>
+                <a id="linkedin" href="https://www.linkedin.com/in/carlos-martinez-653b2522b/">LinkedIn</a>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <h3></h3>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+</body></html>
