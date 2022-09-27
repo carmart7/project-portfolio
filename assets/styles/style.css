@@ -197,6 +197,12 @@ article {
     object-fit: cover;
     border-radius: 15px;
     border: 2px solid var(--border-color);
+    filter: grayscale(60%);
+    transition: .25s;
+}
+
+.work-img:hover {
+    filter: grayscale(0%);
 }
 
 /* Contact Section */
