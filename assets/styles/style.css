@@ -68,10 +68,6 @@ nav a {
     position: relative;
     width: 100%;
     height: 450px;
-    background-image: url(../images/stones-2040340_960_720.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     border-top: var(--border-color) solid 2px;
     border-bottom: var(--border-color) solid 2px;
 
@@ -88,6 +84,14 @@ nav a {
     margin-bottom: 10px;
     border: var(--border-color) solid 2px;
     border-right: none;
+}
+
+#image-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
 }
 
 main {
